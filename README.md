@@ -40,4 +40,11 @@ docs/
 │   │   ├──── plan.md # 变更实施计划
 │   │   ├──── /metadata.json
 ```
-  
+
+## 参考
+
+- [spec-kit]<https://github.com/github/spec-kit>
+- <https://github.com/Fission-AI/OpenSpec>
+- <https://github.com/gemini-cli-extensions/conductor>
+- <https://zhuanlan.zhihu.com/p/1993009461451831150>
+- <https://github.com/obra/superpowers>
