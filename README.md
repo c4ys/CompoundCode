@@ -35,7 +35,7 @@ CompoundCode MVP 版本以 Claude Code 插件的形式提供。
 
 ```bash
 # 1. 注册 CompoundCode 市场
-/plugin marketplace add compoundcode/compoundcode-marketplace
+/plugin marketplace add c4ys/compoundcode-marketplace
 
 # 2. 安装插件
 /plugin install compoundcode@compoundcode-marketplace
@@ -49,7 +49,7 @@ CompoundCode MVP 版本以 Claude Code 插件的形式提供。
 1. 在 Claude Code 中初始化项目：
 
 ```
-/compoundcode init
+/compoundcode:init
 ```
 
 Claude 会引导你在项目中创建 `docs/` 目录和基础文档结构。
@@ -57,7 +57,7 @@ Claude 会引导你在项目中创建 `docs/` 目录和基础文档结构。
 2. 开始一个新的功能或变更：
 
 ```
-/compoundcode new add-user-auth
+/compoundcode:new add-user-auth
 ```
 
 Claude 会在 `docs/CHANGES/` 创建一个新的变更目录，包含 `spec.md` 和 `plan.md` 模板。
@@ -66,24 +66,23 @@ Claude 会在 `docs/CHANGES/` 创建一个新的变更目录，包含 `spec.md` 
 
 ### 核心功能（MVP）
 
-- **compound init**：在项目中初始化文档结构和基础文档。
-- **compound new**：开启一个新的功能或变更请求，生成相应的需求规格说明和变更目录。
+- **compoundcode:init**：在项目中初始化文档结构和基础文档。
+- **compoundcode:new**：开启一个新的功能或变更请求，生成需求规格说明和实施计划。
 
 ### 未来功能
 
-- **compound plan**：基于需求规格说明，制定详细的实现计划。
-- **compound execute**：根据计划进行编码和实现的指导。
-- **compound compound**：将反馈和新的经验整合到上下文中，为下一次迭代做好准备。
+- **compoundcode:execute**：根据计划进行编码和实现的指导。
+- **compoundcode:compound**：将反馈和新的经验整合到上下文中，为下一次迭代做好准备。
   
 ## 文档结构
 
-运行 `compound init` 后，将在你的项目中生成以下文档结构：
+运行 `/compoundcode:init` 后，将在你的项目中生成以下文档结构：
 
 ```plaintext
 docs/
 ├── AGENTS.md  # 入口文件
 ├── PROJECT.md # 项目背景
-├── TECKSTACK.md # 技术栈说明
+├── TECHSTACK.md # 技术栈说明
 ├── ARCHITECTURE.md # 架构设计说明
 ├── CODESTYLE.md # 代码规范
 ├── WORKFLOW.md # 工作流说明
