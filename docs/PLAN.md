@@ -13,10 +13,10 @@ CompoundCode 是一个基于复利思维的上下文驱动开发方法论和工�
 
 **工作流**：
 ```
-目标项目 → /compoundcode:init → 创建文档结构（docs/AGENTS.md, PROJECT.md 等）
-         → /compoundcode:new → 创建变更请求（docs/CHANGES/xxx/）
+目标项目 → /compoundcode:init → 创建文档结构（compound/AGENTS.md, project.md 等）
+         → /compoundcode:new → 创建变更请求（compound/changes/xxx/）
          → 手动或 AI 辅助 → 编写 plan.md 和实施
-         → 手动整合 → 更新 SPECS
+         → 手动整合 → 更新 specs
 ```
 
 ## 当前状态
@@ -72,12 +72,12 @@ CompoundCode/
 #### 1.3 文档模板设计
 设计以下文档模板（将内嵌在 skill 文件中）：
 - [ ] `AGENTS.md` - AI 入口文件模板
-- [ ] `PROJECT.md` - 项目背景模板
-- [ ] `TECHSTACK.md` - 技术栈说明模板
-- [ ] `ARCHITECTURE.md` - 架构设计模板
-- [ ] `CODESTYLE.md` - 代码规范模板
-- [ ] `WORKFLOW.md` - 工作流说明模板
-- [ ] `SPECS/INDEX.md` - 需求规格目录模板
+- [ ] `project.md` - 项目背景模板
+- [ ] `techstack.md` - 技术栈说明模板
+- [ ] `architecture.md` - 架构设计模板
+- [ ] `codestyle.md` - 代码规范模板
+- [ ] `workflow.md` - 工作流说明模板
+- [ ] `specs/index.md` - 需求规格目录模板
 - [ ] `change_spec.md` - 变更请求模板
 - [ ] `change_plan.md` - 变更计划模板
 
@@ -95,23 +95,24 @@ CompoundCode/
 - [ ] 创建 `skills/compoundcode-init.md`
 - [ ] 实现初始化逻辑指导
 - [ ] 检测当前目录是否为项目根目录
-- [ ] 创建 `docs/` 目录结构
+- [ ] 创建 `compound/` 目录结构
 - [ ] 生成所有基础文档
 - [ ] 处理已存在文件的情况（询问是否覆盖）
 
 #### 2.2 生成的目录结构
 ```
 目标项目/
-└── docs/
+└── compound/
     ├── AGENTS.md
-    ├── PROJECT.md
-    ├── TECHSTACK.md
-    ├── ARCHITECTURE.md
-    ├── CODESTYLE.md
-    ├── WORKFLOW.md
-    ├── SPECS/
-    │   └── INDEX.md
-    └── CHANGES/
+    ├── project.md
+    ├── techstack.md
+    ├── architecture.md
+    ├── codestyle.md
+    ├── workflow.md
+    ├── init_state.json
+    ├── specs/
+    │   └── index.md
+    └── changes/
 ```
 
 ---
@@ -123,14 +124,14 @@ CompoundCode/
 #### 3.1 Skill 实现
 - [ ] 创建 `skills/compoundcode-new.md`
 - [ ] 实现 `new <name>` 命令逻辑
-- [ ] 在 `docs/CHANGES/` 创建变更目录（格式：`YYYY-MM-DD-name/`）
+- [ ] 在 `compound/changes/` 创建变更目录（格式：`YYYY-MM-DD-name/`）
 - [ ] 生成 `spec.md` 文件（需求规格说明）
 - [ ] 生成 `plan.md` 文件（实施计划）
 - [ ] 生成 `metadata.json` 文件
 
 #### 3.2 生成的结构
 ```
-docs/CHANGES/2026-01-21-add-feature/
+compound/changes/2026-01-21-add-feature/
 ├── spec.md          # 变更需求说明
 ├── plan.md          # 变更实施计划
 └── metadata.json    # 元数据

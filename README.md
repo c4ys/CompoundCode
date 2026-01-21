@@ -81,16 +81,16 @@ Claude 会在 `docs/CHANGES/` 创建一个新的变更目录，包含 `spec.md` 
 ```plaintext
 docs/
 ├── AGENTS.md  # 入口文件
-├── PROJECT.md # 项目背景
-├── TECHSTACK.md # 技术栈说明
-├── ARCHITECTURE.md # 架构设计说明
-├── CODESTYLE.md # 代码规范
-├── WORKFLOW.md # 工作流说明
-├── SPECS/ # 需求规格说明
-│   ├── INDEX.md # 需求规格说明目录
+├── project.md # 项目背景
+├── techstack.md # 技术栈说明
+├── architecture.md # 架构设计说明
+├── codestyle.md # 代码规范
+├── workflow.md # 工作流说明
+├── specs/ # 需求规格说明
+│   ├── index.md # 需求规格说明目录
 │   ├── user-auth.md # 用户认证 目的、需求、设计、变更摘要
 │   ├── xxx.md # 其他模块需求规格说明
-├── CHANGES/ # 变更记录
+├── changes/ # 变更记录
 │   ├── 2026-01-12-add-auth/ # 参考 conductor
 │   │   ├──── spec.md # 变更需求说明
 │   │   ├──── plan.md # 变更实施计划
