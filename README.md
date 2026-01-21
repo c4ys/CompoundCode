@@ -23,18 +23,61 @@
 - **变更记录**：详细记录每次变更的需求、计划和实施过程，确保项目的透明度和可追溯性。
 - **易于上手**：提供简单的命令行工具，帮助团队快速启动和使用CompoundCode。
 - **开源社区支持**：欢迎社区贡献和反馈，共同推动CompoundCode的发展。
-- **多客户端支持**：支持claude code、gemini cli、codex cli、copilot cli、opencode cli等多种AI客户端，灵活适应不同团队的需求。
+- **多客户端支持**：支持 claude code、gemini cli、codex cli、copilot cli、opencode cli 等多种 AI 客户端，灵活适应不同团队的需求。（MVP 版本聚焦 Claude Code 集成）
 
 ## 使用方法
 
-- **compound:init**：初始化项目结构和基础文档。
-- **compound:new**：开启一个新的功能或变更请求，生成相应的需求规格说明。
-- **compound:plan**：基于需求规格说明，制定详细的实现计划。
-- **compound:execute**：根据计划进行编码和实现。
-- **compound:review**：对实现的代码和文档进行审查，确保质量和一致性。
-- **compound:compound**：将审查反馈和新的经验整合到上下文中，为下一次迭代做好准备。
+### 安装（MVP 版本）
+
+CompoundCode MVP 版本以 Claude Code 插件的形式提供。
+
+#### Claude Code 安装
+
+```bash
+# 1. 注册 CompoundCode 市场
+/plugin marketplace add compoundcode/compoundcode-marketplace
+
+# 2. 安装插件
+/plugin install compoundcode@compoundcode-marketplace
+
+# 3. 验证安装
+/help
+```
+
+### 快速开始
+
+1. 在 Claude Code 中初始化项目：
+
+```
+/compoundcode init
+```
+
+Claude 会引导你在项目中创建 `docs/` 目录和基础文档结构。
+
+2. 开始一个新的功能或变更：
+
+```
+/compoundcode new add-user-auth
+```
+
+Claude 会在 `docs/CHANGES/` 创建一个新的变更目录，包含 `spec.md` 和 `plan.md` 模板。
+
+3. Claude 会自动读取 `docs/AGENTS.md` 了解项目上下文，并在整个开发过程中提供指导。
+
+### 核心功能（MVP）
+
+- **compound init**：在项目中初始化文档结构和基础文档。
+- **compound new**：开启一个新的功能或变更请求，生成相应的需求规格说明和变更目录。
+
+### 未来功能
+
+- **compound plan**：基于需求规格说明，制定详细的实现计划。
+- **compound execute**：根据计划进行编码和实现的指导。
+- **compound compound**：将反馈和新的经验整合到上下文中，为下一次迭代做好准备。
   
 ## 文档结构
+
+运行 `compound init` 后，将在你的项目中生成以下文档结构：
 
 ```plaintext
 docs/
