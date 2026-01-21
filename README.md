@@ -13,7 +13,7 @@
 ## 特点
 
 - **AI辅助编码**：利用AI技术自动生成和维护代码以及文档，提升开发效率。
-- **复利增长**：采用`Context + Request -> Plan -> Execute -> Review -> Compound + Context`，在每次迭代中，将经验和设计反馈到上下文中，实现代码质量和功能的复利增长。
+- **复利增长**：采用`Context + Request -> Plan -> Execute -> Review -> Compound + Context`，在每次迭代中，将需求、设计和经验反馈到上下文中，实现代码质量和功能的复利增长。
 - **先提问后设计**： 参考`superpowers`的理念，并不会立刻开始编写代码。相反，它会先退后一步，询问你真正想要做什么，就像一个经验丰富工程师一样，先需要你澄清需求和设计要求。
 - **先设计后编码**： 参考`OpenSpec`、`spec-kit`等**SDD**(SPECS-Driven Development)的理念，强调在编码前进行充分的设计和规划，确保代码质量和可维护性。
 - **上下文驱动开发**：参考`conductor`等**CDD**（Context-Driven Development）的理念，通过自动收集和维护上下文信息，帮助AI快速（Token less）和充分地理解项目需求和设计，提高代码生成的准确性和质量。
