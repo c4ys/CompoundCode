@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "project_type": "brownfield",
+  "last_successful_step": "techstack",
+  "steps": {
+    "project_detection": {
+      "completed": true,
+      "timestamp": "2026-01-27T10:00:00Z"
+    },
+    "directory_creation": {
+      "completed": true,
+      "timestamp": "2026-01-27T10:01:00Z"
+    },
+    "agents": {
+      "completed": true,
+      "timestamp": "2026-01-27T10:02:00Z"
+    },
+    "project": {
+      "completed": true,
+      "timestamp": "2026-01-27T10:05:00Z"
+    },
+    "techstack": {
+      "completed": true,
+      "timestamp": "2026-01-27T10:08:00Z"
+    },
+    "architecture": {
+      "completed": false
+    },
+    "codestyle": {
+      "completed": false
+    },
+    "workflow": {
+      "completed": false
+    },
+    "specs_index": {
+      "completed": false
+    },
+    "finalize": {
+      "completed": false
+    }
+  },
+  "collected_data": {
+    "project_name": "my-awesome-project",
+    "description": "一个基于 React 和 FastAPI 的全栈 Web 应用",
+    "languages": ["TypeScript", "Python"],
+    "frameworks": ["React", "FastAPI", "Tailwind CSS"],
+    "database": "PostgreSQL",
+    "architecture_pattern": "前后端分离",
+    "modules": ["frontend", "backend", "shared"]
+  }
+}

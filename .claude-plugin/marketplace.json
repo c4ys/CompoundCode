@@ -1,0 +1,20 @@
+{
+  "name": "compoundcode-local",
+  "description": "CompoundCode 本地市场",
+  "owner": {
+    "name": "ning",
+    "url": "https://github.com/c4ys"
+  },
+  "plugins": [
+    {
+      "name": "compoundcode",
+      "version": "0.1.0",
+      "description": "CompoundCode - 基于复利思维的上下文驱动开发方法论工具集",
+      "source": "./",
+      "author": {
+        "name": "ning",
+        "url": "https://github.com/c4ys"
+      }
+    }
+  ]
+}

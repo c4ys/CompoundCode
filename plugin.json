@@ -1,0 +1,11 @@
+{
+  "name": "compoundcode",
+  "version": "0.1.0",
+  "description": "CompoundCode - 基于复利思维的上下文驱动开发方法论工具集",
+  "author": {
+    "name": "ning",
+    "url": "https://github.com/c4ys"
+  },
+  "repository": "https://github.com/c4ys/compoundcode",
+  "skills": "./skills/"
+}
